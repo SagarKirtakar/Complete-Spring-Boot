@@ -4,368 +4,283 @@
 
 ---
 
-# 📌 Prerequisites
+## 📌 Learning Roadmap
 
-## ☕ Core Java
+### ☕ Core Java (Must Be Strong)
 
-* OOPs Concepts
-* Collections Framework
-* Exception Handling
-* Multithreading Basics
-* Java 8 Features
-
-  * Lambda Expressions
-  * Stream API
-  * Functional Interfaces
-  * Optional Class
-
-## 🛠 Build Tools
-
-* Maven
-* Gradle
-
-## 🗄 Database Fundamentals
-
-* SQL Basics
-* Joins
-* Keys
-* Normalization
+- OOPs Concepts
+- Collections Framework
+- Exception Handling
+- Multithreading Basics
+- Java 8 Features
+  - Lambda Expressions
+  - Stream API
+  - Functional Interfaces
+  - Optional
 
 ---
 
-# 🌱 Spring Framework
+### 🌱 Spring Core
 
-### Core Concepts
-
-* Introduction to Spring
-* IOC (Inversion of Control)
-* Dependency Injection
-* Bean Lifecycle
-* Bean Scopes
-
-### Dependency Injection
-
-* Constructor Injection
-* Setter Injection
-* Field Injection
-
-### Stereotype Annotations
-
-* @Component
-* @Service
-* @Repository
-* @Controller
-
-### Configuration
-
-* @Configuration
-* @Bean
-* @Autowired
-* @Qualifier
-* @Primary
+- IOC (Inversion of Control)
+- Dependency Injection
+- Bean Lifecycle
+- Bean Scopes
+- Constructor Injection vs Setter Injection
+- `@Component`
+- `@Service`
+- `@Repository`
+- `@Controller`
+- `@Autowired`
 
 ---
 
-# 🚀 Spring Boot Fundamentals
+### 🚀 Spring Boot
 
-### Getting Started
-
-* Introduction to Spring Boot
-* Spring vs Spring Boot
-* Spring Boot Architecture
-* Auto Configuration
-* Starter Dependencies
-
-### Configuration
-
-* application.properties
-* application.yml
-* Profiles
-* Logging
-
-### Embedded Servers
-
-* Tomcat
-* Jetty
-* Undertow
+- Why Spring Boot?
+- Spring vs Spring Boot
+- Auto Configuration
+- Starter Dependencies
+- Embedded Tomcat
+- `@SpringBootApplication`
+- `application.properties`
+- Profiles
 
 ---
 
-# 🌐 REST APIs
+### 🌐 REST APIs
 
-### HTTP Methods
-
-* GET
-* POST
-* PUT
-* PATCH
-* DELETE
-
-### Annotations
-
-* @RestController
-* @RequestMapping
-* @GetMapping
-* @PostMapping
-* @PutMapping
-* @DeleteMapping
-
-### Request Handling
-
-* @PathVariable
-* @RequestParam
-* @RequestBody
-
-### Response Handling
-
-* ResponseEntity
-* HTTP Status Codes
+- GET, POST, PUT, DELETE
+- `@RestController`
+- `@RequestMapping`
+- `@PathVariable`
+- `@RequestParam`
+- `@RequestBody`
+- ResponseEntity
 
 ---
 
-# 🗄 Spring Data JPA & Hibernate
+### 🗄️ Spring Data JPA + Hibernate
 
-### ORM Fundamentals
+- JPA
+- Hibernate
+- ORM
+- Entity Mapping
+- JpaRepository
 
-* JPA
-* Hibernate
-* Entity Mapping
+#### Relationships
 
-### Repositories
+- One-to-One
+- One-to-Many
+- Many-to-One
+- Many-to-Many
 
-* CrudRepository
-* JpaRepository
+#### Fetch Types
 
-### Relationships
-
-* One-to-One
-* One-to-Many
-* Many-to-One
-* Many-to-Many
-
-### Queries
-
-* Derived Queries
-* JPQL
-* Native Queries
-
-### Advanced Concepts
-
-* Pagination
-* Sorting
-* Lazy Loading
-* Eager Loading
+- Lazy Loading
+- Eager Loading
 
 ---
 
-# ⚠ Exception Handling
+### ⚠️ Exception Handling
 
-* Try-Catch-Finally
-* Custom Exceptions
-* @ExceptionHandler
-* @ControllerAdvice
-* Global Exception Handling
+- Custom Exceptions
+- `@ExceptionHandler`
+- `@ControllerAdvice`
 
 ---
 
-# ✅ Validation
+### ✅ Validation
 
-* @Valid
-* @NotNull
-* @NotBlank
-* @Email
-* @Size
-* Custom Validators
+- `@Valid`
+- `@NotNull`
+- `@NotBlank`
+- `@Email`
 
 ---
 
-# 🔐 Spring Security
+### 🔐 Spring Security
 
-### Fundamentals
-
-* Authentication
-* Authorization
-* Password Encoding
-
-### Role-Based Access Control
-
-* ADMIN
-* USER
-* MANAGER
-
-### JWT Authentication
-
-* Access Token
-* Refresh Token
-* Token Validation
-
-### OAuth2
-
-* Google Login
-* GitHub Login
+- Authentication
+- Authorization
+- JWT
+- Role-Based Access Control
+- OAuth2 Basics
 
 ---
 
-# 📊 Spring Boot Actuator
+### 🛠️ Maven
 
-* Health Endpoint
-* Metrics
-* Monitoring
-* Logging
-* Production Readiness
+- POM.xml
+- Dependency Management
+- Build Lifecycle
 
 ---
 
-# 🧪 Testing
+### 📊 Spring Boot Actuator
 
-### Unit Testing
-
-* JUnit 5
-* Mockito
-
-### Integration Testing
-
-* MockMvc
-* Testcontainers
+- Health Endpoint
+- Metrics
+- Monitoring
 
 ---
 
-# ☁ Microservices
+## 🎯 Top 25 Interview Questions
 
-### Fundamentals
+### Spring Core
 
-* Monolithic vs Microservices
-* API Gateway
-* Service Discovery
-
-### Spring Cloud
-
-* Eureka Server
-* Config Server
-* OpenFeign
-
-### Resilience
-
-* Circuit Breaker
-* Resilience4j
-
----
-
-# 🐳 Containerization
-
-### Docker
-
-* Docker Basics
-* Dockerfile
-* Docker Compose
-
-### Kubernetes
-
-* Pods
-* Deployments
-* Services
-
----
-
-# 📬 Messaging
-
-* Apache Kafka
-* RabbitMQ
-
----
-
-# 📈 Monitoring & Observability
-
-* Prometheus
-* Grafana
-* ELK Stack
-
----
-
-# 🔀 Version Control
-
-* Git
-* GitHub
-
----
-
-# 🗄 Databases
-
-### Relational Databases
-
-* MySQL
-* PostgreSQL
-
-### NoSQL Databases
-
-* MongoDB
-
----
-
-# 🚀 Projects
-
-## Beginner
-
-* Student Management System
-* Employee Management System
-
-## Intermediate
-
-* Blog Management System
-* Library Management System
-
-## Advanced
-
-* E-Commerce Backend API
-* Banking Application
-* Task Management System
-
----
-
-# 🎯 Interview Preparation
-
-### Spring Framework
-
-* Frequently Asked Questions
+1. What is Spring Framework?
+2. What is IOC?
+3. What is Dependency Injection?
+4. Constructor Injection vs Setter Injection?
+5. Bean Scopes?
+6. Difference between `@Component`, `@Service`, and `@Repository`?
 
 ### Spring Boot
 
-* Interview Questions
+7. What is Spring Boot?
+8. Spring vs Spring Boot?
+9. What is Auto Configuration?
+10. What is Starter Dependency?
+11. Which embedded server does Spring Boot use?
+12. Explain `@SpringBootApplication`.
+
+### REST API
+
+13. Difference between GET and POST?
+14. PUT vs PATCH?
+15. `@PathVariable` vs `@RequestParam`?
+16. Difference between `@Controller` and `@RestController`?
 
 ### JPA & Hibernate
 
-* Interview Questions
+17. What is JPA?
+18. What is Hibernate?
+19. Difference between JPA and Hibernate?
+20. What is ORM?
+21. Lazy Loading vs Eager Loading?
 
-### Spring Security
+### Security
 
-* Interview Questions
+22. Authentication vs Authorization?
+23. What is JWT?
+24. What is Role-Based Access Control?
 
-### Microservices
+### Production
 
-* Interview Questions
-
----
-
-# 🛠 Tech Stack
-
-* Java 17+
-* Spring Framework
-* Spring Boot 3.x
-* Spring Data JPA
-* Hibernate
-* Spring Security
-* JWT
-* OAuth2
-* MySQL
-* PostgreSQL
-* MongoDB
-* Maven
-* Git & GitHub
-* Docker
-* Kafka
+25. How do you monitor Spring Boot applications in production?
 
 ---
 
-## ⭐ Happy Learning & Keep Building!
+## 🚀 Project Questions
 
-> "First, solve the problem. Then, write the code." — John Johnson
+Prepare answers for:
+
+- Explain your project.
+- Why did you choose Spring Boot?
+- Which Spring Boot version have you used?
+- Which Java version have you used?
+- Which database have you used?
+- Which dependencies have you used?
+- How did you handle exceptions?
+- How did you validate user input?
+- How did you perform CRUD operations?
+
+---
+
+## 📚 Current Industry Stack (2026)
+
+- Java 17
+- Spring Boot 3.x
+- Spring Data JPA
+- Hibernate
+- MySQL
+- Maven
+- Git & GitHub
+- Postman
+- IntelliJ IDEA
+- Spring Security + JWT
+
+---
+
+## 🗓️ Recommended Study Plan
+
+### Week 1
+- Core Java
+- Spring Core
+
+### Week 2
+- Spring Boot
+- REST APIs
+
+### Week 3
+- JPA + Hibernate
+- SQL
+
+### Week 4
+- Spring Security + JWT
+- Exception Handling
+- Validation
+
+### Week 5
+- Build a Complete CRUD Project
+- Practice Interview Questions
+
+---
+
+## 🚀 Repository Structure
+
+```
+complete-spring-boot
+│
+├── spring-core
+├── spring-boot-basics
+├── rest-api
+├── spring-data-jpa
+├── hibernate
+├── exception-handling
+├── validation
+├── spring-security-jwt
+├── actuator
+├── microservices
+└── interview-questions
+```
+
+---
+
+## 🛠️ Tech Stack
+
+- Java 17+
+- Spring Framework
+- Spring Boot 3.x
+- Spring Data JPA
+- Hibernate
+- Spring Security
+- JWT
+- MySQL
+- Maven
+- Git & GitHub
+- Postman
+
+---
+
+## ⭐ Goal
+
+Become a Java Backend Developer by mastering:
+
+- Java
+- Spring Framework
+- Spring Boot
+- REST APIs
+- JPA & Hibernate
+- Spring Security
+- SQL
+- Git & GitHub
+- Maven
+- Microservices
+
+---
+
+⭐ If you find this repository useful, don't forget to star it!
+
+Happy Learning! 🚀
