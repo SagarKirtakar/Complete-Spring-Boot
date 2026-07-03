@@ -1,6 +1,5 @@
-package com.sagar.SpringSecExample;
+package com.sagar.SpringSecExample.controller;
 
-import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

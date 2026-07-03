@@ -1,5 +1,6 @@
-package com.sagar.SpringSecExample;
+package com.sagar.SpringSecExample.controller;
 
+import com.sagar.SpringSecExample.model.Student;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.security.web.csrf.CsrfToken;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,4 +1,4 @@
-package com.sagar.SpringSecExample;
+package com.sagar.SpringSecExample.model;
 
 public class Student {
 
