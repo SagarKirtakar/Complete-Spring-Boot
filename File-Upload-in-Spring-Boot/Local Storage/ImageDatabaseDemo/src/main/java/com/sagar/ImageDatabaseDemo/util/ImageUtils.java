@@ -1,10 +1,10 @@
-package com.sagar.FileDemo.util;
+package com.sagar.ImageDatabaseDemo.util;
 
 import java.io.ByteArrayOutputStream;
 import java.util.zip.Deflater;
 import java.util.zip.Inflater;
 
-public class FileUtils {
+public class ImageUtils {
 
 
     public static byte[] compressImage(byte[] data) {

@@ -1,9 +1,9 @@
-package com.sagar.FileDemo.services.impl;
+package com.sagar.ImageDatabaseDemo.services.impl;
 
-import com.sagar.FileDemo.entity.FileData;
-import com.sagar.FileDemo.repository.StorageRepository;
-import com.sagar.FileDemo.services.FileDataService;
-import com.sagar.FileDemo.util.FileUtils;
+import com.sagar.ImageDatabaseDemo.entity.ImageData;
+import com.sagar.ImageDatabaseDemo.repository.StorageRepository;
+import com.sagar.ImageDatabaseDemo.services.ImageDataService;
+import com.sagar.ImageDatabaseDemo.util.ImageUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -12,18 +12,18 @@ import java.io.IOException;
 import java.util.Optional;
 
 @Service
-public class FileDataServiceImpl implements FileDataService {
+public class ImageDataServiceImpl implements ImageDataService {
 
     @Autowired
     private StorageRepository storageRepository;
 
     @Override
     public String uploadImage(MultipartFile file) throws IOException {
-       FileData fileData =   storageRepository.save(FileData.builder()
+       ImageData imageData =   storageRepository.save(ImageData.builder()
                 .name(file.getOriginalFilename())
                 .type(file.getContentType())
-                .imageData(FileUtils.compressImage(file.getBytes())).build());
-        if(fileData != null) {
+                .imageData(ImageUtils.compressImage(file.getBytes())).build());
+        if(imageData != null) {
             return "file uploaded successfully : "+file.getOriginalFilename();
         }else {
             return "file not upload due to some error : "+file.getOriginalFilename();
@@ -32,8 +32,8 @@ public class FileDataServiceImpl implements FileDataService {
 
     @Override
     public byte[] downloadImage(String fileName) {
-        Optional<FileData> dbFileData = storageRepository.findByName(fileName);
-            byte[] images = FileUtils.decompressImage(dbFileData.get().getImageData());
+        Optional<ImageData> dbFileData = storageRepository.findByName(fileName);
+            byte[] images = ImageUtils.decompressImage(dbFileData.get().getImageData());
             return images;
 
     }

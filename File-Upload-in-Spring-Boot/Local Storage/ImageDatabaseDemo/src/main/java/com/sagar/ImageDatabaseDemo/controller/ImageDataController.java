@@ -1,6 +1,6 @@
-package com.sagar.FileDemo.controller;
+package com.sagar.ImageDatabaseDemo.controller;
 
-import com.sagar.FileDemo.services.FileDataService;
+import com.sagar.ImageDatabaseDemo.services.ImageDataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -10,14 +10,14 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 
 @RestController
-public class FileDataController {
+public class ImageDataController {
 
     @Autowired
-    private FileDataService fileDataService;
+    private ImageDataService imageDataService;
 
     @PostMapping("/upload")
     public ResponseEntity<String> uploadImage(@RequestParam("image") MultipartFile file) throws IOException {
-      String msg =  fileDataService.uploadImage(file);
+      String msg =  imageDataService.uploadImage(file);
       if(msg != null) {
           return ResponseEntity.ok(msg);
       }else {
@@ -27,7 +27,7 @@ public class FileDataController {
 
     @GetMapping("/download/{fileName}")
     public ResponseEntity<?> downloadImage(@PathVariable String fileName) {
-    byte [] imageData = fileDataService.downloadImage(fileName);
+    byte [] imageData = imageDataService.downloadImage(fileName);
     return ResponseEntity.ok().contentType(MediaType.valueOf("image/png")).body(imageData);
     }
 

@@ -1,10 +1,10 @@
-package com.sagar.FileDemo;
+package com.sagar.ImageDatabaseDemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FileDemoApplicationTests {
+class ImageDatabaseDemoApplicationTests {
 
 	@Test
 	void contextLoads() {

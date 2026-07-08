@@ -1,4 +1,4 @@
-package com.sagar.FileDemo.entity;
+package com.sagar.ImageDatabaseDemo.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -9,7 +9,7 @@ import lombok.*;
 @Data
 @Table(name = "ImageData")
 @Builder
-public class FileData {
+public class ImageData {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

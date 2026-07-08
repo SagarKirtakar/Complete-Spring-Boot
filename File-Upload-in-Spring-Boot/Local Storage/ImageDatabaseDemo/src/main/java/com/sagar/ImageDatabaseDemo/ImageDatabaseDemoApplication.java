@@ -1,13 +1,13 @@
-package com.sagar.FileDemo;
+package com.sagar.ImageDatabaseDemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FileDemoApplication {
+public class ImageDatabaseDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FileDemoApplication.class, args);
+		SpringApplication.run(ImageDatabaseDemoApplication.class, args);
 	}
 
 }
