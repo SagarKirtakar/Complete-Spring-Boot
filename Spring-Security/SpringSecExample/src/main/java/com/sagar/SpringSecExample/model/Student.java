@@ -1,25 +1,22 @@
 package com.sagar.SpringSecExample.model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table
 public class Student {
 
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("Student{");
-        sb.append("id=").append(id);
-        sb.append(", name='").append(name).append('\'');
-        sb.append(", marks=").append(marks);
-        sb.append('}');
-        return sb.toString();
-    }
 
+    @Id
+    @GeneratedValue(strategy =  GenerationType.IDENTITY)
     private int id;
+
+    private String name;
+    private int marks;
 
     public Student() {
         super();
     }
-
-    private String name;
-    private int marks;
 
     public Student(int id, String name, int marks) {
         this.id = id;
@@ -49,5 +46,15 @@ public class Student {
 
     public void setMarks(int marks) {
         this.marks = marks;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Student{");
+        sb.append("id=").append(id);
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", marks=").append(marks);
+        sb.append('}');
+        return sb.toString();
     }
 }

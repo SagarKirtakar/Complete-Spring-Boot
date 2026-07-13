@@ -14,10 +14,12 @@ import java.util.List;
 @RestController
 public class StudentController {
 
-    private List<Student> students = new ArrayList<>(List.of(
-            new Student(101, "Saga", 60),
-            new Student(102, "kunla", 50)
-    ));
+    private List<Student> students = new ArrayList<>(
+            List.of(
+            new Student(101, "Sagar", 60),
+            new Student(102, "kunal", 50)
+            )
+    );
 
     @GetMapping("/getAllStd")
     public List<Student> getAllStudents() {
@@ -33,4 +35,5 @@ public class StudentController {
     public CsrfToken csrfToken(HttpServletRequest request) {
         return (CsrfToken) request.getAttribute("_csrf");
     }
+
 }
