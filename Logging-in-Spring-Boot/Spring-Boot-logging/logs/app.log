@@ -1,13 +1,2 @@
-2026-07-06 15:59:47 - Commencing graceful shutdown. Waiting for active requests to complete
-2026-07-06 15:59:47 - Graceful shutdown complete
-2026-07-06 15:59:50 - Starting SpringBootLoggingApplication using Java 24.0.2 with PID 10012 (C:\Users\Sagar\Documents\Code\Complete-Spring-Boot\Logging-in-Spring-Boot\Spring-Boot-logging\target\classes started by Sagar in C:\Users\Sagar\Documents\Code\Complete-Spring-Boot\Logging-in-Spring-Boot\Spring-Boot-logging)
-2026-07-06 15:59:50 - No active profile set, falling back to 1 default profile: "default"
-2026-07-06 15:59:52 - Tomcat initialized with port 8080 (http)
-2026-07-06 15:59:52 - Initializing ProtocolHandler ["http-nio-8080"]
-2026-07-06 15:59:52 - Starting service [Tomcat]
-2026-07-06 15:59:52 - Starting Servlet engine: [Apache Tomcat/10.1.55]
-2026-07-06 15:59:52 - Initializing Spring embedded WebApplicationContext
-2026-07-06 15:59:52 - Root WebApplicationContext: initialization completed in 1740 ms
-2026-07-06 15:59:52 - Starting ProtocolHandler ["http-nio-8080"]
-2026-07-06 15:59:52 - Tomcat started on port 8080 (http) with context path '/'
-2026-07-06 15:59:53 - Started SpringBootLoggingApplication in 3.298 seconds (process running for 3.844)
+2026-07-06 16:18:00 - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-06 16:18:00 - Graceful shutdown complete
