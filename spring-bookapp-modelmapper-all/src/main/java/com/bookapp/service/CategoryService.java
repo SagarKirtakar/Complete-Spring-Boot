@@ -1,6 +1,9 @@
 package com.bookapp.service;
 
 import com.bookapp.dto.CategoryRequestDTO;
+import com.bookapp.model.Category;
+
+import java.util.List;
 
 public interface CategoryService {
 
@@ -11,4 +14,6 @@ public interface CategoryService {
     void deleteCategory(int categoryId);
 
     CategoryRequestDTO getById(int categoryId);
+
+    List<CategoryRequestDTO> getAllCategories();
 }

@@ -1,8 +1,6 @@
 package com.bookapp;
 
-import com.bookapp.dto.AuthorRequestDTO;
-import com.bookapp.dto.CategoryRequestDTO;
-import com.bookapp.dto.PublisherRequestDTO;
+import com.bookapp.dto.*;
 import com.bookapp.model.Book;
 import com.bookapp.service.AuthorService;
 import com.bookapp.service.BookService;
@@ -13,6 +11,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.List;
 
 @SpringBootApplication
@@ -72,6 +72,55 @@ public class SpringBookappModelmapperAllApplication implements CommandLineRunner
                 null
         );
         publisherService.addPublisher(publisher2);
+
+        // One to One
+        BookDetailRequestDTO bookDetailRequestDTO = new BookDetailRequestDTO("English", 100, 2025);
+
+        // One to Many
+        ReviewRequestDTO reviewRequestDTO1 = new ReviewRequestDTO(
+                "Rakesh",
+                "Good",
+                3
+        );
+
+        ReviewRequestDTO reviewRequestDTO2 = new ReviewRequestDTO(
+                "Priya",
+                "Excellent book with clear explanations.",
+                5
+        );
+
+        ReviewRequestDTO reviewRequestDTO3 = new ReviewRequestDTO(
+                "Rahul",
+                "Informative but could include more practical examples.",
+                4
+        );
+
+        List<ReviewRequestDTO> reviewRequestDTOList = Arrays.asList(reviewRequestDTO1, reviewRequestDTO2, reviewRequestDTO3);
+
+        //Many to One
+        PublisherRequestDTO publisherRequestDTO = publisherService.getById(1);
+        AuthorRequestDTO authorRequestDTO = authorService.getById(1);
+
+        // Many to Many
+        CategoryRequestDTO categoryReq1 = categoryService.getById(1);
+        CategoryRequestDTO  categoryReq2 = categoryService.getById(2);
+
+        List<CategoryRequestDTO> categoryRequestDTOList = Arrays.asList(categoryReq1, categoryReq2);
+
+        BookRequestDTO bookRequestDTO =
+                new BookRequestDTO(
+                        "Atomic Habit",
+                        900,
+                        bookDetailRequestDTO,
+                        publisherRequestDTO,
+                        authorRequestDTO,
+                        reviewRequestDTOList,
+                        categoryRequestDTOList
+                );
+                bookService.addBook(bookRequestDTO);
+
+
+
 
 
 

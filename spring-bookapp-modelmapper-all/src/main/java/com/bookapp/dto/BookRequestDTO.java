@@ -13,17 +13,16 @@ public class BookRequestDTO {
 
     private String title;
 
-    private String isbn;
-
     private double price;
 
     private BookDetailRequestDTO bookDetail;
 
+    private PublisherRequestDTO publisher;
+
+    private AuthorRequestDTO author;
+
     private List<ReviewRequestDTO> reviews;
 
-    private Integer publisherId;
+    private List<CategoryRequestDTO> categories;
 
-    private Integer authorId;
-
-    private List<Integer> categoryIds;
 }

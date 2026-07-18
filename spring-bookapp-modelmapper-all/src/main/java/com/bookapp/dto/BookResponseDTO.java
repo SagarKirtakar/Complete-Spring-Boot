@@ -25,6 +25,8 @@ public class BookResponseDTO {
 
     private AuthorRequestDTO author;
 
+    private List<ReviewRequestDTO> reviewRequestDTOS;
+
     private List<CategoryRequestDTO> categories;
 
 }

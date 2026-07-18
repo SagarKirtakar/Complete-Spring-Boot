@@ -10,6 +10,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -21,6 +22,7 @@ public class BookServiceImpl implements BookService {
     @Override
     public void addBook(BookRequestDTO requestDTO) {
         Book book = modelMapper.map(requestDTO, Book.class);
+        book.setIsbn(generateIsbn());
         bookRepository.save(book);
     }
 
@@ -58,5 +60,9 @@ public class BookServiceImpl implements BookService {
                 .toList();
 
         return dtoList;
+    }
+
+    public String generateIsbn() {
+        return "ISBN"+ UUID.randomUUID().toString().substring(0, 13);
     }
 }
