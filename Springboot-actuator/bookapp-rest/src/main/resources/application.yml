@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: bookapp-rest
+
+management:
+  endpoints:
+    web:
+      base-path: /dashboard
+      exposure:
+        include: "*"
+        exclude: beans,metrics
+  endpoint:
+    health:
+      show-details: always
